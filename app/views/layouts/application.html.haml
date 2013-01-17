@@ -1,0 +1,9 @@
+!!!
+%html
+  %head
+    = render 'layouts/head'
+  %body{id: controller_name}
+    = render 'devise/shared/managment'
+    %p.notice{style: display_none_if(!notice)}= notice
+    %p.alert{style: display_none_if(!alert)}= alert
+    = yield

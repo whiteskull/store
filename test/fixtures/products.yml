@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+iphone:
+  name: IPhone
+  description: MyText
+  price: 9.99
+  category: hardware
+
+windows:
+  name: Windows 8
+  description: MyText
+  price: 9.99
+  category: software

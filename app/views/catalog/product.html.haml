@@ -1,0 +1,16 @@
+%h1= @product.name
+= link_to product_lightbox(@product)
+#price
+  price:
+  = number_to_currency(@product.price)
+#desciption= @product.description
+
+- if @product_in_cart.present?
+  Do you have
+  = pluralize(@product_in_cart.quantity, 'product')
+  in cart
+
+= link_to 'Add to cart', cart_add_item_path(@product.id)
+
+.back
+  = link_to 'back', :back

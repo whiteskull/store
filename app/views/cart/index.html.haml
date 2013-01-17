@@ -1,0 +1,6 @@
+- @cart.line_items.each do |line_item|
+  = div_for line_item do
+    = line_item.product.name
+    *
+    = form_tag do
+      = text_field_tag :quantity, line_item.quantity, maxlength: 2, class: 'span1 quantity'

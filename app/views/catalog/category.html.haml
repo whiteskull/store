@@ -1,0 +1,7 @@
+%h1= @category.name
+
+- @category.products.each do |product|
+  = div_for product do
+    = link_to product.name, catalog_product_path(@category.alias, product.alias)
+
+= link_to 'back', :back

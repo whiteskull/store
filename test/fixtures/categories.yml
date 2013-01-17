@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+hardware:
+  name: hardware
+  hidden: false
+
+software:
+  name: hardware
+  hidden: false

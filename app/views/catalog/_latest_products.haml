@@ -1,0 +1,6 @@
+%h3= link_to category.name, catalog_category_path(category.alias)
+- category.products.limit(3).each do |product|
+  = div_for product do
+    = link_to image_tag(product.product_images.first.image.thumb.url), catalog_product_path(category.alias, product.alias)
+    = link_to product.name, catalog_product_path(category.alias, product.alias)
+

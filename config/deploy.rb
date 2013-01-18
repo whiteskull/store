@@ -43,8 +43,10 @@ end
 
 after 'deploy:update_code', :after_update_code
 after 'deploy:migrations', :after_update_code
-after 'deploy:update', :after_update_code
 task :after_update_code, roles => :app do
+  db_config = "#{deploy_to}/database.yml"
+  run "cp #{db_config} #{release_path}/config/database.yml"
   run "chmod 777 -R #{release_path}/tmp"
   run "ln -s #{shared_path}/uploads #{release_path}/public/uploads"
 end
+

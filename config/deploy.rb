@@ -49,4 +49,3 @@ task :after_update_code, roles => :app do
   run "chmod 777 -R #{release_path}/tmp"
   run "ln -s #{shared_path}/uploads #{release_path}/public/uploads"
 end
-

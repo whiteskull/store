@@ -1,0 +1,4 @@
+{"ts":1359962744198,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"%h1= @category.name\n\n- @category.products.each do |product|\n  = div_for product do\n    = link_to product.name, catalog_product_path(@category.alias, product.alias)\n\n= link_to 'back', :back"]],"start1":0,"start2":0,"length1":0,"length2":188}]],"length":188}
+{"contributors":[],"silentsave":true,"ts":1359963981005,"patch":[[{"diffs":[[1,"\n"],[0,"%h1= @ca"]],"start1":0,"start2":0,"length1":8,"length2":9}]],"length":189,"saved":false}
+{"ts":1359963985941,"patch":[[{"diffs":[[1,"This is a new cate"],[0,"\n%h1= @c"]],"start1":0,"start2":0,"length1":8,"length2":26}]],"length":207,"saved":false}
+{"ts":1359963986684,"patch":[[{"diffs":[[0,"new cate"],[1,"gory"],[0,"\n%h1= @c"]],"start1":10,"start2":10,"length1":16,"length2":20}]],"length":211,"saved":false}

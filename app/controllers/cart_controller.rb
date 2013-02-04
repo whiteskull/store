@@ -11,10 +11,10 @@ class CartController < ApplicationController
       redirect_to catalog_product_path(product.category.alias, product.alias), notice: "#{product.name} has been added to your cart"
     end
   end
-
+  
   def remove_item
   end
-
+  
   def destroy
   end
 end
